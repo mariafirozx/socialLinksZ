@@ -149,7 +149,7 @@ a:link{
 @media (max-width: 720px){
 
     .contents {
-        padding: 0.5rem 1rem; /* Reduce padding */
+        padding: 0.10rem 2rem 2rem; /* Reduce padding */
         gap: 2px; /* Decrease gap between elements */
         clip-path: polygon(15px 0%, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0% 15px); /* Adjust the polygon shape */
         border-top-right-radius: 15px; /* Decrease border radius */
