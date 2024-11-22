@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -8,21 +12,32 @@ body{
     min-height: 100vh;
     display: grid;
     place-content: center;
-    background-color: hsl(0, 0%, 8%);
     text-align: center;
-    font-family: 'inter', sans-serif;
+    font-family: "Libre Baskerville", serif;
     overflow: hidden;
     cursor: url('./assets/imgs/icons8-pen-48.png'), auto;
+    background-image: url("./assets/imgs/bg01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
 }
 
 .contents{
+    position: relative;
     display: grid;
     flex-direction: column;
-    background-color: hsl(0, 0%, 12%);
+    /* background: rgb(238,174,202); */
+    background: linear-gradient(90deg, rgba(148,187,233,1) 2%, rgba(238,174,202,1) 86%);    
+    /* padding: .045rem 3rem .45rem; */
     padding: .1rem 3rem .1rem;
     gap: 4px;
-    border-radius: 15px;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;    
     opacity: 0.9;
+    align-content: center;
+    justify-content: center;
 }
 .contents > *{
     margin: 0;
@@ -36,8 +51,12 @@ body{
    z-index: -1;
 }
 .info{
-    margin-bottom: 10px;
+    position: absolute;
+    margin-top: 10em;
+    margin-bottom: 5em;
     gap: 1rem;
+    text-align: center;
+    margin-left: 2.20em;
     padding: 2px 15px 15px;
     align-items: center;
 }
@@ -46,30 +65,41 @@ body{
     margin: 0;
 }
 
-.user-pro{
-    max-width: 120px;
-    border-radius: 50%;
+/* .pro-container{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
 
-    margin-bottom: 6px;
-    margin-top: 47px;
+.user-pro{
+    max-width: 315px;
+    /* border-radius: 50%; */
+
+    bottom: 8em;
+    top: 7em;
+    margin: 0 auto 1rem;
 }
 .user-name{
-    font-size: 30px;
-    color: white;
-    margin-top: 20px;
+    font-size: 35px;
+    color: #1d1d74;
+    margin-top: 25px;
     padding-bottom: .240rem;
+    margin-right: .3em;
     font-weight: 700;
+    text-align: center;
 }
 
 .user-location{
     font-size: 14px;
     margin-top: 10px;
-    color: #e0b0ff;
+    color: #151557;
 }
 .info p{
     font-size: 15px;
     font-weight: 500;
-    color: white;
+    color: #8e3ec4;
+    font-weight: 700;
     margin-bottom: 2px;
     margin-top: 19px;
     padding-bottom: 2px;
@@ -79,27 +109,27 @@ body{
     margin: 0;
 }
 .socialsBtn{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding-bottom: 1rem;
-    margin-top: 0rem;
+    margin-top: 3rem;
     padding-top: 0;
 }
 .socialsBtn .button{
     display: block;
-    margin-top: 19px;
-  
+    margin-top: 15px;
+    margin-bottom: 1em;
     padding: 14px;
-    background-color:  hsl(0, 0%, 20%);
+    background-color:  #5d5dce;
     border: 0;
     border-radius: .25rem;
-    color: #d4aeed;
+    color: #151557;
     font-family: 'inter', sans-serif; 
-    width: 340px;
+    width: 310px;
     font-weight: 650;
     font-size: 15px;
     text-decoration: none;
     border-radius: 10px;
-    box-shadow: 0 2px 2px 1px hsl(0, 0%, 20%);
+    box-shadow: 0 2px 2px 1px #3c3ccd;
     cursor: url('./assets/imgs/icons8-pen-48.png'), auto;
 
     transition: background-color 0.2s ease-in-out;
