@@ -172,9 +172,9 @@ a:link{
     .contents {
         padding: 1rem 5.5rem; /* Reduced padding: equal for top-bottom and smaller for sides */
         gap: 2px; /* Decrease the gap between elements */
-        clip-path: polygon(10px 0%, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0% 10px);
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 10px;
+        clip-path: polygon(15px 0%, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0% 15px);
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
         font-size: 0.9rem; /* Scale down font size */
         max-width: 85%; /* Further constrain the width */
         margin: 1rem auto; /* Ensure centered content with proper spacing */
