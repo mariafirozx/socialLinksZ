@@ -154,6 +154,10 @@ canvas{
     padding: 3px;
     
     border-radius: 10px;
+    -webkit-transform: rotate(15deg) scale(1.4);
+    transform: rotate(15deg) scale(1.4);
+    -webkit-transition: .3s ease-in-out; 
+    transition: .2s ease-in-out;
 }
 .button img{
     top: 2em;
@@ -166,8 +170,8 @@ a{
 }
 
 .button:hover{
-    transform: rotate(10deg);
-    transition: .4s ease-in-out;
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
     /* background-color: #d2b5e7; */
 
 }
