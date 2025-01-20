@@ -46,7 +46,7 @@ canvas{
     /* background: rgb(238,174,202); */
     background: linear-gradient(90deg, rgba(148,187,233,1) 2%, rgba(238,174,202,1) 86%);    
     /* padding: .045rem 3rem .45rem; */
-    padding: 0.7rem 5rem .10rem;
+    padding: 0.7rem 5rem .79rem;
     gap: 4px;
     clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
     border-top-right-radius: 30px;
@@ -73,7 +73,7 @@ canvas{
 .info{
     position: absolute;
     margin-top: 9.20em;
-    margin-bottom: 15em;
+    margin-bottom: 1em;
     gap: 1rem;
     text-align: center;
     margin-left: 3.20em;
@@ -140,24 +140,26 @@ canvas{
     margin: 0;
 }
 .socialsBtn{
-    padding-bottom: 1px;
-    margin-top: 2em;
+    padding-bottom: 26px;
+    margin-top: 1em;
     z-index: 999;
 }
 .socialsBtn .button{
 
     display: inline-block;
-    margin-top: 15px;
-    margin-bottom: 1em;
-    gap: 1rem;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    gap: 3rem;
     padding-left: 12em;
     padding: 3px;
     
     border-radius: 10px;
 }
 .button img{
-    margin-right: 2px;
-    max-width: 35px;
+    top: 2em;
+    bottom: 2em;
+    margin-right: 1px;
+    max-width: 23px;
 }
 a{
     text-decoration: none;
@@ -170,6 +172,28 @@ a{
 
 }
 
+.contents #btn {
+    bottom: 1 4em;
+
+    padding: 0.6em 2.10em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background-color: #414186;
+    color: rgb(251, 248, 248);
+    z-index: 20;
+    transition: .4s ease-in-out;
+}
+
+
+.contents #btn:hover {
+    background: #9696dd;
+    color: rgb(18, 18, 18);
+    cursor: pointer;
+    z-index: 20;
+  }
 
 /* @media (max-width: 720px){
 
