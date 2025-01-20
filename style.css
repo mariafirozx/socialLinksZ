@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
-
+@font-face {
+    font-family: 'magical-night';
+    src: url('./magical-night-font/MagicalnightRegular-6RpA6.otf') format('truetype');
+        
+}
 
 *{
     padding: 0;
@@ -15,7 +19,7 @@ body{
     text-align: center;
     font-family: "Libre Baskerville", serif;
     overflow: hidden;
-    cursor: url('./assets/imgs/icons8-pen-48.png'), auto;
+    cursor: pointer;
     background-image: url("./assets/imgs/bg01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +34,7 @@ body{
     /* background: rgb(238,174,202); */
     background: linear-gradient(90deg, rgba(148,187,233,1) 2%, rgba(238,174,202,1) 86%);    
     /* padding: .045rem 3rem .45rem; */
-    padding: 0.070rem 3rem .1rem;
+    padding: 0.7rem 5rem .10rem;
     gap: 4px;
     clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
     border-top-right-radius: 30px;
@@ -52,11 +56,11 @@ body{
 }
 .info{
     position: absolute;
-    margin-top: 10em;
-    margin-bottom: 5em;
+    margin-top: 9.20em;
+    margin-bottom: 15em;
     gap: 1rem;
     text-align: center;
-    margin-left: 2.20em;
+    margin-left: 3.20em;
     padding: 2px 15px 15px;
     align-items: center;
 }
@@ -73,75 +77,80 @@ body{
 } */
 
 .user-pro{
-    max-width: 315px;
+    /* position: relative; */
+    max-width: 305px;
+   
     /* border-radius: 50%; */
 
-    bottom: 8em;
-    top: 7em;
+    padding-bottom: 60px;
+    padding-top: .35px;
+    
     margin: 0 auto 1rem;
 }
 .user-name{
+    font-family: 'magical-night';
     font-size: 35px;
     color: #1d1d74;
     margin-top: 25px;
     padding-bottom: .240rem;
-    margin-right: .3em;
+    margin-right: 1.19em;
     font-weight: 700;
     text-align: center;
 }
 
 .user-location{
+    margin-right: 2rem;
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 3px;
     color: #151557;
 }
 .info p{
-    font-size: 15px;
-    font-weight: 500;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 550;
     color: #8e3ec4;
-    font-weight: 700;
-    margin-bottom: 2px;
-    margin-top: 19px;
-    padding-bottom: 2px;
+    margin-right: 29px;
+    margin-top: 10px;
+    width: 330px;
+    line-height: 1.32em;
+    padding-bottom: 4rem;
     
+}
+.info span{
+    color: #3a2648;
+    font-size: 10px;
 }
 .socialsBtn > *{
     margin: 0;
 }
 .socialsBtn{
-    margin-bottom: 1rem;
     padding-bottom: 1rem;
     margin-top: 3rem;
-    padding-top: 0;
+    z-index: 999;
 }
 .socialsBtn .button{
-    display: block;
+
+    display: inline-block;
     margin-top: 15px;
     margin-bottom: 1em;
-    padding: 14px;
-    background-color:  #5d5dce;
-    border: 0;
-    border-radius: .25rem;
-    color: #151557;
-    font-family: 'inter', sans-serif; 
-    width: 310px;
-    font-weight: 650;
-    font-size: 15px;
-    text-decoration: none;
+    gap: 1rem;
+    padding-left: 12em;
+    padding: 3px;
+    
     border-radius: 10px;
-    box-shadow: 0 2px 2px 1px #3c3ccd;
-    cursor: url('./assets/imgs/icons8-pen-48.png'), auto;
-
-    transition: background-color 0.2s ease-in-out;
-
 }
-a:link{
+.button img{
+    margin-right: 1px;
+    max-width: 35px;
+}
+a{
     text-decoration: none;
 }
 
 .button:hover{
-    background-color: #e0b0ff;
-    color: black;
+    transform: rotate(10deg);
+    transition: .4s ease-in-out;
+    /* background-color: #d2b5e7; */
 
 }
 
