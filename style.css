@@ -154,8 +154,8 @@ canvas{
     padding: 3px;
     
     border-radius: 10px;
-    -webkit-transform: rotate(15deg) scale(1.4);
-    transform: rotate(15deg) scale(1.4);
+    -webkit-transform: rotate(5deg) scale(1.4);
+    transform: rotate(5deg) scale(1.4);
     -webkit-transition: .3s ease-in-out; 
     transition: .2s ease-in-out;
 }
@@ -163,7 +163,7 @@ canvas{
     top: 2em;
     bottom: 2em;
     margin-right: 1px;
-    max-width: 23px;
+    max-width: 20px;
 }
 a{
     text-decoration: none;
